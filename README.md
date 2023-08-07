@@ -583,7 +583,7 @@
    **Prototype chaining** is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language.
 
    The prototype on object instance is available through **Object.getPrototypeOf(object)** or **\_\_proto__** property whereas prototype on constructors function is available through **Object.prototype**.
-   In programming, specifically in the context of object-oriented languages, a prototype chain is a mechanism used to achieve inheritance and object delegation. It is a fundamental feature in languages that follow the prototype-based model, such as JavaScript.
+   
 
 In a prototype-based language, objects can inherit properties and behaviors from other objects, forming a chain-like structure. Each object has an associated prototype, which acts as a blueprint for the object. If a property or method is accessed on an object and it is not present on that object itself, the runtime looks for the property or method in its prototype. If not found in the prototype, the search continues up the prototype chain until the property is found or the chain is exhausted.
 
