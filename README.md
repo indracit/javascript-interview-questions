@@ -583,12 +583,15 @@
    **Prototype chaining** is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language.
 
    The prototype on object instance is available through **Object.getPrototypeOf(object)** or **\_\_proto__** property whereas prototype on constructors function is available through **Object.prototype**.
+   In programming, specifically in the context of object-oriented languages, a prototype chain is a mechanism used to achieve inheritance and object delegation. It is a fundamental feature in languages that follow the prototype-based model, such as JavaScript.
+
+In a prototype-based language, objects can inherit properties and behaviors from other objects, forming a chain-like structure. Each object has an associated prototype, which acts as a blueprint for the object. If a property or method is accessed on an object and it is not present on that object itself, the runtime looks for the property or method in its prototype. If not found in the prototype, the search continues up the prototype chain until the property is found or the chain is exhausted.
 
    ![Screenshot](images/prototype_chain.png)
 
    **[⬆ Back to Top](#table-of-contents)**
 
-3. ### What is the difference between Call, Apply and Bind
+4. ### What is the difference between Call, Apply and Bind
 
    The difference between Call, Apply and Bind can be explained with below examples,
 
@@ -648,7 +651,7 @@
 
    **[⬆ Back to Top](#table-of-contents)**
 
-4. ### What is JSON and its common operations
+5. ### What is JSON and its common operations
 
    **JSON** is a text-based data format following JavaScript object syntax, which was popularized by `Douglas Crockford`. It is useful when you want to transmit data across a network and it is basically just a text file with an extension of .json, and a MIME type of application/json
 
@@ -666,7 +669,7 @@
 
    **[⬆ Back to Top](#table-of-contents)**
 
-5. ### What is the purpose of the array slice method
+6. ### What is the purpose of the array slice method
 
    The **slice()** method returns the selected elements in an array as a new array object. It selects the elements starting at the given start argument, and ends at the given optional end argument without including the last element. If you omit the second argument then it selects till the end.
 
@@ -683,7 +686,7 @@
 
    **[⬆ Back to Top](#table-of-contents)**
 
-6. ### What is the purpose of the array splice method
+7. ### What is the purpose of the array splice method
 
    The **splice()** method is used either adds/removes items to/from an array, and then returns the removed item. The first argument specifies the array position for insertion or deletion whereas the optional second argument indicates the number of elements to be deleted. Each additional argument is added to the array.
 
@@ -703,7 +706,7 @@
 
    **[⬆ Back to Top](#table-of-contents)**
 
-7. ### What is the difference between slice and splice
+8. ### What is the difference between slice and splice
 
    Some of the major difference in a tabular form
 
@@ -715,7 +718,7 @@
 
    **[⬆ Back to Top](#table-of-contents)**
 
-8. ### How do you compare Object and Map
+9. ### How do you compare Object and Map
 
    **Objects** are similar to **Maps** in that both let you set keys to values, retrieve those values, delete keys, and detect whether something is stored at a key. Due to this reason, Objects have been used as Maps historically. But there are important differences that make using a Map preferable in certain cases.
 
@@ -728,7 +731,7 @@
 
    **[⬆ Back to Top](#table-of-contents)**
 
-9. ### What is the difference between == and === operators
+10. ### What is the difference between == and === operators
 
    JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators take type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables. The strict operators follow the below conditions for different types,
 
@@ -759,13 +762,13 @@
 
    **[⬆ Back to Top](#table-of-contents)**
 
-10. ### What are lambda or arrow functions
+11. ### What are lambda or arrow functions
 
     An arrow function is a shorter syntax for a function expression and does not have its own **this, arguments, super, or new.target**. These functions are best suited for non-method functions, and they cannot be used as constructors.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-11. ### What is a first class function
+12. ### What is a first class function
 
     In Javascript, functions are first class objects. First-class functions means when functions in that language are treated like any other variable.
 
@@ -778,7 +781,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-12. ### What is a first order function
+13. ### What is a first order function
 
     First-order function is a function that doesn’t accept another function as an argument and doesn’t return a function as its return value.
 
@@ -788,7 +791,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-13. ### What is a higher order function
+14. ### What is a higher order function
 
     Higher-order function is a function that accepts another function as an argument or returns a function as a return value or both.
 
@@ -801,7 +804,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-14. ### What is a unary function
+15. ### What is a unary function
 
     Unary function (i.e. monadic) is a function that accepts exactly one argument. It stands for a single argument accepted by a function.
 
@@ -813,7 +816,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-15. ### What is the currying function
+16. ### What is the currying function
 
     Currying is the process of taking a function with multiple arguments and turning it into a sequence of functions each with only a single argument. Currying is named after a mathematician **Haskell Curry**. By applying currying, a n-ary function turns it into a unary function.
 
@@ -833,7 +836,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-16. ### What is a pure function
+17. ### What is a pure function
 
     A **Pure function** is a function where the return value is only determined by its arguments without any side effects. i.e, If you call a function with the same arguments 'n' number of times and 'n' number of places in the application then it will always return the same value.
 
@@ -860,7 +863,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-17. ### What is the purpose of the let keyword
+18. ### What is the purpose of the let keyword
 
     The `let` statement declares a **block scope local variable**. Hence the variables defined with let keyword are limited in scope to the block, statement, or expression on which it is used. Whereas variables declared with the `var` keyword used to define a variable globally, or locally to an entire function regardless of block scope.
 
@@ -877,7 +880,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-18. ### What is the difference between let and var
+19. ### What is the difference between let and var
 
     You can list out the differences in a tabular format
 
@@ -905,13 +908,13 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-19. ### What is the reason to choose the name let as a keyword
+20. ### What is the reason to choose the name let as a keyword
 
     `let` is a mathematical statement that was adopted by early programming languages like **Scheme** and **Basic**. It has been borrowed from dozens of other languages that use `let` already as a traditional keyword as close to `var` as possible.
 
     **[⬆ Back to Top](#table-of-contents)**
 
-20. ### How do you redeclare variables in switch block without an error
+21. ### How do you redeclare variables in switch block without an error
 
     If you try to redeclare variables in a `switch block` then it will cause errors because there is only one block. For example, the below code block throws a syntax error as below,
 
@@ -946,7 +949,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-21. ### What is the Temporal Dead Zone
+22. ### What is the Temporal Dead Zone
 
     The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. In ECMAScript 6, accessing a `let` or `const` variable before its declaration (within its scope) causes a ReferenceError. The time span when that happens, between the creation of a variable’s binding and its declaration, is called the temporal dead zone.
 
@@ -963,7 +966,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-22. ### What is IIFE(Immediately Invoked Function Expression)
+23. ### What is IIFE(Immediately Invoked Function Expression)
 
     IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. The signature of it would be as below,
 
@@ -985,7 +988,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-23. ### How do you decode or encode a URL in JavaScript?
+24. ### How do you decode or encode a URL in JavaScript?
 
     `encodeURI()` function is used to encode an URL. This function requires a URL string as a parameter and return that encoded string.
     `decodeURI()` function is used to decode an URL. This function requires an encoded URL string as parameter and return that decoded string.
@@ -1000,7 +1003,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-24. ### What is memoization
+25. ### What is memoization
 
     Memoization is a programming technique which attempts to increase a function’s performance by caching its previously computed results. Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. Otherwise the function is executed and then the result is added to the cache.
     Let's take an example of adding function with memoization,
@@ -1028,7 +1031,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-25. ### What is Hoisting
+26. ### What is Hoisting
 
     Hoisting is a JavaScript mechanism where variables, function declarations and classes are moved to the top of their scope before code execution. Remember that JavaScript only hoists declarations, not initialisation.
     Let's take a simple example of variable hoisting,
